@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://bwtaylor.github.com/docbook-xsl/example/onepageHtml.xsl" type="text/xsl"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <info>
+        <title/>
+        <subtitle>SOA Developer's Cookbook</subtitle>
+        <author>
+            <personname>Bryan Taylor</personname>
+            <address>
+                <city>San Antonio</city>
+            </address>
+            <email>btaylor@rackspace.com</email>
+        </author>
+        <copyright>
+            <year>2011</year>
+            <holder>Rackspace Hosting, Inc.</holder>
+        </copyright>
+        <releaseinfo>Draft</releaseinfo>        
+    </info>
+    <section>
+        <title>Problem</title>
+        <para>You would like to have a solution to an SOA development problem formally declared to
+            be a best practice.</para>
+    </section>
+    <section>
+        <title>Solution</title>
+        <para>Capture your problem statement and solution in writing somewhere accessible by others,
+            such as a wiki or mailing list. Then engage the recipe approval process and advance your
+            solution to approval. This process can take place in either or both of the
+            Foundation/Hybrid or Cloud organizations. If both organizations approve the recipe as a
+            best practice, it becomes a Rackspace best practice. </para>
+    </section>
+    <section>
+        <title>Discussion</title>
+        <para>The approval process has four phases: <emphasis role="bold">draft</emphasis>,
+                <emphasis role="bold">alpha</emphasis>, <emphasis role="bold">beta</emphasis>, and
+                <emphasis role="bold">approved</emphasis>. When a solution is a <emphasis
+                role="bold">draft</emphasis> it can be in any format, but it is encouraged to follow
+            the form of a recipe such as this one. It is expected that discussion and revision will
+            be rapid and unstructured. Either a wiki or mailing list or both is an
+            acceptable.</para>
+        <para>Once a solution is considered conceptually stable by its author and is documented
+            sufficiently it can be advanced to <emphasis role="bold">alpha</emphasis> status. This
+            requires two things. First, an architect other than the author must review and agree to
+            endorse the solution for consideration as a cookbook recipe. The author may or may not
+            be an architect, but either way the sponsor must be a different individual. Second, a
+            techwriter must convert the unstructured content into the standard DocBook format used
+            by these recipes and check it in to the appropriate source repository. At this point the
+            recipe becomes visible for review by all interested parties. It is possible and
+            acceptable for multiple competing solutions to a problem to reach the alpha
+            stage.</para>
+        <para>To become a <emphasis role="bold">beta</emphasis> level recipe within either of the
+            two organizations, the endorsement of a majority of that organizations architecture team is
+            required. The executive in charge of architecture for each group will establish a list
+            of architects whose endorsements. Each architect may endorse or abstain. When competing
+            solutions exist, an architect should only endorse one version. Anyone who has not endorsed 
+            a recipe for advancement, is considered to want further discussion, improvement, and possibly
+            alternateves. The recipe will be promoted to beta when a simple majority of the non-abstaining
+            architects have endorsed it. Each sponsor's name should be added to the document. There is no
+            time frame for approval, nor is there any expectation that sponsors sign off at the same
+            time.</para>
+        <para>It is expected that during the alpha stage there will be active discussion and
+            participation by many interested parties, such as developers, managers, QA, and system
+            administrators. These contributors are encouraged to express their views to the voting
+            architects. Improvements to the recipe are expected along the way. Sponsors of a
+            modified version may change their sponsorship or not to the competing modification.
+            Discussion, revision, and responsoring continue until some version has a majority of the
+            non-abstaining votes. When this happens the solution reaches <emphasis role="bold"
+                >beta</emphasis> in the organization. It may be revised by taking a revision through
+            the voting process. When one version gets majority sponsorship, this obsoletes all
+            competing recipes.</para>
+        <para>When a recipe is a <emphasis role="bold">beta</emphasis>  teams are encouraged to
+            implement it and to provide feedback. To reach final approval, some team must produce a
+            working implementation that is released for production use that exemplifies the solution
+            documented by the  recipe. If necessary, the recipe may be changed to incorporate
+            lessons learned, but the modified recipe must be sponsored again by a majority of the
+            architectural voters and it must match the production implementation. The reference
+            implementation should be added to the references section of the document. Once this is
+            achieved, the architecture executive for the organization may declare the document
+                <emphasis role="bold">approved</emphasis>. Once this is done, it is expected that
+            teams implement conformant solutions. There can only be one <emphasis role="bold"
+                >approved</emphasis> version at a time. There may concurrently be a single <emphasis
+                role="bold">beta</emphasis> version under consideration as an uprev of the best
+            practice.</para>
+        <para>It is possible that a recipe might be approved by one organization and not the other.
+            In fact competing recipes might each be approved by one and not the other. This is
+            expected in some cases, but it is desireable where possible to drive towards a single
+            agreed upon best practice. When both organizations approve a recipe, it becomes a
+            Rackspace best practice. Note that such a recipe would have to have two separate
+            reference implementations, one in each organization.</para>
+    </section>
+    <section>
+        <title>Good and Bad Practices</title>
+        <orderedlist>
+            <title>Good Practices</title>
+            <listitem>
+                <para>Express draft cookbooks in any form that is convenient for local discussion,
+                    even if it is not company accessible.</para>
+            </listitem>
+            <listitem>
+                <para>Seek techwriter assistance for conversion to DocBook when the recipe is ready
+                    to engage the sponsorship process.</para>
+            </listitem>
+            <listitem>
+                <para>Interested technical contributors who are not eligable to sponsor a recipe are
+                    encouraged to discuss and lobby any and all archtiects to sponsor
+                    recipes.</para>
+            </listitem>
+            <listitem>
+                <para>Expect implementation teams to follow the recipes.</para>
+            </listitem>
+        </orderedlist>
+        <orderedlist>
+            <title>Bad Practices</title>
+            <listitem>
+                <para>It is bad to expect people who create draft recipes to use DocBook, expecially
+                    if they don't know or like it.</para>
+            </listitem>
+        </orderedlist>       
+    </section>
+    <section>
+        <title>Unresolved Issues</title>
+        <para></para>
+    </section>
+    <section>
+        <title>Frequently Asked Questions</title>
+        <para>The following are frequently asked questions whose answers are worth collecting in one
+            place.</para>
+        <para><qandaset>
+                <qandaentry>
+                    <question>
+                        <para>Where can I access the cookbooks and learn of their status?</para>
+                    </question>
+                    <answer>
+                        <para>The DocBook artifacts for the recipes are maintained in a git
+                            repository: git@repoman.rackspace.com:/cookbook.git . They may be viewed
+                            via gitweb. The states of approval are represented by branches within
+                            gitweb. When you navigate to the raw view of a recipe in gitweb in your
+                            browser, the styling will make it display in a browser friendly, human
+                            readable form.</para>
+                    </answer>
+                </qandaentry>
+            <qandaentry>
+                <question>
+                    <para>Why are you using DocBook? Why don't you use format XYZ?</para>
+                </question>
+                <answer>
+                    <para>There is no single format that will make everyone who writes recipes
+                        happy. If you want to initiate a cookbook in format XYZ, please do so,
+                        up to the point that it must be published for consideration as an alpha
+                        level recipe. DocBook should never interfere with your ability to
+                        express a proposed solution to a problem in a format convenient to you.
+                        However, at some point in the process, we need to take unstructured
+                        drafts and convert them to a single standard that works for everyone.
+                        The motivations behind DocBook are:<itemizedlist>
+                            <listitem>
+                                <para>It's pure text and so fits into an SCM well, especially
+                                    git. We expect branching will be quite usefull.</para>
+                            </listitem>
+                            <listitem>
+                                <para>We wanted a format that could separate content from
+                                    presentation well, and specifically could be rendered to
+                                    mulitple forms such as pdf and html.</para>
+                            </listitem>
+                            <listitem>
+                                <para>We wanted an XML format so that it could be styled and
+                                    served directly as a web artifact out of the SCM web tools
+                                    for direct consumption in browsers.</para>
+                            </listitem>
+                        </itemizedlist></para>
+                </answer>
+            </qandaentry>
+            <qandaentry>
+                <question>
+                    <para>How is endorsement recorded?</para>
+                </question>
+                <answer>
+                    <para>Endorsement  should be recorded using an &lt;othercredit&gt; tag, with a
+                            &lt;contrib&gt; subelement containing the text "Endorsement".
+                            Endorsement occurs via any mechanism such as verbal, email, or direct
+                            editing of the recipe, subject to organizational custom. Endorsement can
+                            be revoked at any time for any reason.</para>
+                    <para>Sample DocBook XML to record an endorsement:
+                        <programlisting language="xml"><![CDATA[
+    <othercredit>
+        <personname>Mark Morga</personname>
+        <affiliation>
+            <orgname>Foundation IT</orgname>
+        </affiliation>
+        <contrib>Endorsement</contrib>
+    </othercredit>
+]]>
+                        </programlisting>
+                    </para>
+                </answer>
+            </qandaentry>
+        </qandaset></para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para/>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+</article>
