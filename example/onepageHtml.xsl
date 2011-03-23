@@ -6,7 +6,7 @@
 
 <xsl:import href="http://bwtaylor.github.com/docbook-xsl/xhtml/docbook.xsl"/>
 
-  <xsl:param name="make.clean.html" select="1"></xsl:param>
+  <xsl:param name="make.clean.html" select="0"></xsl:param>
   <xsl:param name="qanda.defaultlabel">qnumberanda</xsl:param>
 
 
